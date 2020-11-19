@@ -1,0 +1,27 @@
+{
+  "endpoints": [
+    {
+      "method":     "get",
+      "status_code": 200,
+      "route":      "/u/foo",
+      "body_path":   "<PATH_TO_PROJECT>/mujina/internal/samples/ok.json"
+    },
+    {
+      "method":     "get",
+      "status_code": 200,
+      "route":      "/u/foo/:t/wow",
+      "body_path":   "<PATH_TO_PROJECT>/mujina/internal/samples/ok.json"
+    },
+    {
+      "method":     "post",
+      "status_code": 200,
+      "route":      "/u/bar"
+    },
+    {
+      "method":     "post",
+      "status_code": 204,
+      "route":      "/u/bar",
+      "body_path":   "<PATH_TO_PROJECT>/mujina/internal/samples/created.json"
+    }
+  ]
+}
